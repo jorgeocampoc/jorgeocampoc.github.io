@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sty.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Mi portafoly</title>
+  </head>
+
+  <body>
+    <header class="h-10 bg-black d-flex" id="header">
+      <div class="menu">
+        <label class="logo" for="btn-menu">
+          <i class="icon-hover fa-solid fa-bars fa-2x"></i>
+        </label>
+      </div>
+      <div class="col-3 d-flex flex-custom-mid profileMenu">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/assets/img/perfil.png"
+            alt="Bootstrap"
+            width="45"
+            class="rounded-circle"
+          />
+          <span>Jorge Ocampo</span>
+        </a>
+      </div>
+      <div class="col-6 flex-custom-mid menu-links menu2">
+        <nav class="gap-custom-20px">
+          <a class="drop-shadown links active" id="link-home" href="#home">
+            Inicio
+          </a>
+          <a class="drop-shadown links" id="link-about" href="#about">
+            Sobre mi
+          </a>
+          <a class="drop-shadown links" id="link-proyects" href="#proyects">
+            Proyectos
+          </a>
+          <a class="drop-shadown links" id="link-services" href="#services">
+            Servivios
+          </a>
+        </nav>
+      </div>
+      <input type="checkbox" id="btn-menu" />
+
+      <div class="menu-container">
+        <div class="menu-content">
+          <nav class="nav-manu">
+            <a onclick="closeMenu()" class="links text-start ps-3" href="#home">
+              Inicio
+            </a>
+            <a
+              onclick="closeMenu()"
+              class="links text-start ps-3"
+              href="#about"
+            >
+              Sobre mi
+            </a>
+            <a
+              onclick="closeMenu()"
+              class="links text-start ps-3"
+              href="#proyects"
+            >
+              Proyectos
+            </a>
+            <a
+              onclick="closeMenu()"
+              class="links text-start ps-3"
+              href="#services"
+            >
+              Servicios
+            </a>
+          </nav>
+          <label class="logoClosed mx-3" for="btn-menu">
+            <i class="fa-2x fa-solid fa-xmark"></i>
+          </label>
+        </div>
+      </div>
+      <div class="col-3 flex-custom-mid menu2">
+        <nav class="gap-custom-20px">
+          <a href="#" class=""
+            ><i class="drop-shadown fa-brands fa-github"></i
+          ></a>
+          <a href="#" class=""
+            ><i class="drop-shadown fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" class=""
+            ><i class="drop-shadown fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class=""
+            ><i class="drop-shadown fa-brands fa-whatsapp"></i
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <!------------------     section1 -------------------->
+    <section id="home" class="section-1">
+      <div
+        class="d-flex container justify-content-center align-items-center"
+        id="section-1-home"
+      >
+        <div class="col d-flex justify-content-center" id="home-img">
+          <img
+            src="/assets/img/perfil.png"
+            alt=""
+            id="img-profile"
+            width="400px"
+            class="rounded-circle border-warning-subtle"
+          />
+        </div>
+        <div class="col" id="detail-profile">
+          <h1 class="text-center text-name-custom" id="">
+            Jorge <br />Ocampo Cerezo
+          </h1>
+          <p
+            class="text-center fs-2 text-profile-custom text-decoration-underline"
+          >
+            Ingeniero de Sistemas | Developer
+          </p>
+          <!-- "Desarrollando con Propósito: Desde la Idea hasta el Código, Creando Soluciones con Pasión, Creatividad y Optimismo" -->
+          <p class="w-75 py-3 m-auto text-center fs-4" id="slogan">
+            <strong>De la Idea al Código:</strong> Creando Soluciones con
+            Propósito, Pasión y Creatividad
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!------------------     section 2 -------------------->
+    <section id="about" class="section-2">
+      <div class="container">
+        <div class="row pt-6">
+          <div class="px-2 row h-50-about align-items-center">
+            <div class="col ms-3">
+              <h2 class="mb-3">Acerca de mi</h2>
+              <p class="about-text-custom" id="aboutMe">
+                <!-- abot me -->
+              </p>
+            </div>
+            <div class="col img-about-custom ms-3">
+              <!-- img -->
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-around">
+            <div class="col-7 d-flex flex-wrap">
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/js.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 loading-container mx-1 ms-2">
+                  <div class="loading-bar" id="loaBar-1" value="60"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/react.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 w-75 loading-container ms-2">
+                  <div class="loading-bar" id="loaBar-2" value="60"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/node.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 loading-container mx-1 ms-2">
+                  <div class="loading-bar" id="loaBar-3" value="60"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/angular.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 w-75 loading-container ms-2">
+                  <div class="loading-bar" id="loaBar-4" value="50"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/html.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 loading-container mx-1 ms-2">
+                  <div class="loading-bar" id="loaBar-5" value="80"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/css.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 w-75 loading-container ms-2">
+                  <div class="loading-bar" id="loaBar-6" value="50"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/sql.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 loading-container mx-1 ms-2">
+                  <div class="loading-bar" id="loaBar-7" value="50"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/mongo.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 w-75 ms-1 loading-container ms-2">
+                  <div class="loading-bar" id="loaBar-8" value="70"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/java.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 loading-container mx-1 ms-2">
+                  <div class="loading-bar" id="loaBar-9" value="40"></div>
+                </div>
+              </div>
+
+              <div
+                class="my-1 col-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="col-1">
+                  <img
+                    class="posAbs"
+                    src="assets/svg/spring.svg"
+                    width="35"
+                    alt=""
+                  />
+                </div>
+                <div class="col-10 w-75 ms-2 loading-container">
+                  <div class="loading-bar" id="loaBar-10" value="50"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <h2 class="mb-3">Educacion y Conocimientos</h2>
+              <p class="about-text-custom px-2" id="skill-text">
+                <!-- skills -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="proyects" class="section-3">
+      <div
+        class="container h-100 d-flex flex-wrap gap-5 justify-content-around"
+      >
+        <div class="col-10 pt-5 mt-5">
+          <h3 class="card-title text-center mt-5">Mis projectos</h3>
+        </div>
+        <div class="col-5 mx-2 ">
+          <div class="accordion " id="accordionProject-1">
+            <div class="accordion-item bg-dark">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-dark"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionProject-1"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong>
+                  It is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 mx-2">
+          <div class="accordion" id="accordionProject-2">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="true"
+                  aria-controls="collapseTwo"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionProject-2"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appr
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 mx-2">
+          <div class="accordion" id="accordionProject-3">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="true"
+                  aria-controls="collapseThree"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionProject-3"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 mx-2">
+          <div class="accordion" id="accordionProject-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="true"
+                  aria-controls="collapseFour"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionProject-4"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+              
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 mx-2">
+          <div class="accordion" id="accordionProject-5">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="true"
+                  aria-controls="collapseFive"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionProject-5"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+              
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-5 mx-2">
+          <div class="card">
+            <div class="card-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus esse in beatae! Perspiciatis molestiae consectetur,
+              voluptatum odit consequatur error, laboriosam nulla culpa non
+              eveniet ad pariatur perferendis delectus vero inventore!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section-4">Segunda sección (100vh)</section>
+
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

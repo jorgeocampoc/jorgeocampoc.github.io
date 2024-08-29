@@ -1,0 +1,392 @@
+/* -------------------------- variables globales -------------------------- */
+:root {
+  --dark-1: black;
+  --violet-opacity: rgba(190, 60, 202, 0.808);
+  --violet-2: rgba(30, 6, 85, 0.719) ;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black !important;
+  overflow-x: hidden;
+}
+* {
+  color: whitesmoke !important;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--violet-opacity) black;
+  text-decoration: none !important;
+}
+
+/* -------------------------- Estilos section-1 -------------------------- */
+
+.section-1 {
+  background: linear-gradient(rgb(0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("/assets/img/section-2.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.drop-shadown:hover {
+  filter: drop-shadow(0 0 15px rgba(229, 5, 236, 0.993));
+}
+nav .links {
+  text-transform: uppercase;
+}
+
+nav a.active {
+  border-bottom: 5px solid var(--violet-opacity);
+  text-decoration: dashed !important;
+}
+
+#section-1-home{
+  height: 100%;
+  
+}
+#img-profile{
+  box-shadow: 8px 3px 15px -15px rgba(252,0,252,1);
+  border: none;
+  
+}
+
+.text-name-custom{
+  text-wrap: balance;
+  font-size: clamp( 60px, 8px, 10px );
+  font-variant: small-caps;
+  font-weight: bold;
+  font-stretch: wider;
+  
+
+} 
+#slogan{
+  text-wrap: balance;
+  font-style: italic;
+}
+
+.text-profile-custom{
+  text-underline-offset: 10px;
+}
+
+/* -------------------------- estilos menu slide -------------------------- */
+#btn-menu {
+  display: none;
+}
+.menu-container {
+  background: rgba(27, 27, 27, 0.349);
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  width: 100vw;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-menu:checked ~ .menu-container {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-content {
+  height: 100vh;
+  overflow-y: hidden;
+  width: 100%;
+  max-width: 250px;
+  background-color: rgb(26, 25, 25);
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .menu-container .menu-content {
+  transform: translateX(0%);
+}
+
+.nav-manu {
+  transform: translateY(25%);
+}
+.nav-manu a {
+  display: block;
+  text-align: center;
+  padding: 20px 1px;
+  background-color: rgba(43, 41, 41, 0.473);
+  border-left: 5px solid transparent;
+  margin: 10px 0;
+
+  transition: all 500ms ease;
+}
+.nav-manu a:hover {
+  border-left: 5px solid var(--violet-opacity);
+}
+.logoClosed {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+}
+
+/* -------------------------- css personalizados -------------------------- */
+.h-10 {
+  height: 10vh;
+}
+.pt-6{
+  padding-top: 6rem;
+}
+.sticky {
+  position: sticky;
+  transform: translateY(10vh);
+  transition: all 0.5s ease-in;
+  top: -10vh;
+}
+.stickyFinish {
+  transition: all 0.5s ease;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.bg-violet {
+  background-color: var(--violet-opacity);
+}
+.flex-custom-mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gap-custom-20px {
+  display: flex;
+  gap: 20px;
+}
+.transition-page {
+  opacity: 1;
+}
+.transition-after {
+  opacity: 0;
+}
+
+.shadow-custom {
+  box-shadow: 0px 10px 29px -18px var(--violet-opacity);
+}
+.icon-hover:hover {
+  cursor: pointer;
+}
+.text-und{
+  text-underline-offset: 10px;
+}
+.fs-custom{
+  font-size: clamp(16px, 2vw + 0.5rem, 23px);
+  line-height: 1.5;
+}
+
+.bg-dark-opacity{
+  background-color: rgba(10, 10, 10, 0.274) !important;
+}
+
+
+/* -------------------------- estilos section 2 -------------------------- */
+.section-2 {
+  background: linear-gradient(rgb(0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  url("/assets/img/pexels-karolina-grabowska-5624989.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+
+}
+.about-text-custom{
+  font-size: 1.2rem;
+  color: #0333;
+  margin: 0;
+  text-align: justify;
+  padding-right: 50px;
+}
+
+.img-about-custom{
+  height: 350px;
+}
+.img-about-custom::before{
+  content: '';
+  display: block;
+  background-image: url('/assets/img/perfil.png');
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  box-shadow: 1px 1px 0px 0px var(--violet-opacity);
+
+}
+.h-50-about{
+  height: 50vh;
+}
+
+.loading-container{
+  
+  width: 75%;
+  height: 20px;
+  background-color: rgba(117, 113, 113, 0.226);
+  border-radius: 10px;
+
+}
+.loading-bar{
+  height: 100%;
+  background-color: var(--violet-opacity);
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+
+}
+
+
+
+
+
+/* --------------------------  estilos section 3 -------------------------- */
+
+.section-3 {
+  background: linear-gradient(rgb(0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("/assets/img/sec.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card{
+  position: unset !important;
+  
+}
+
+.accordion-button{
+  position: unset !important;
+}
+
+.bg-violet-2{
+  background-color:var(--violet-2) !important;
+}
+.bg-yellow-2{
+  background-color: #F5DE19 !important;
+}
+
+.collapsed{
+  border: none;
+  
+}
+
+.custom-text-title{
+  font-weight: 700;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+}
+.custom-numeral{
+  font-size: 30px;
+  color: var(--violet-2) !important;
+  font-weight: 900;
+}
+
+
+
+
+/* -------------------------- estilos section 4 -------------------------- */
+.section-4 {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)),
+  url("/assets/img/premium_photo-1720287601920-ee8c.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+/* -------------------------- Medias querys -------------------------- */
+
+/* -------------------------- query menu slide -------------------------- */
+@media (width > 850px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (width < 850px) {
+  .menu {
+    display: block;
+    width: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .menu2 {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    z-index: 9999;
+    width: 100%;
+  }
+  .profileMenu {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+
+/* -------------------------- query section 1 -------------------------- */
+@media (width < 1000px) {
+  #section-1-home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  #img-profile{
+    width: 300px;
+    margin: auto;
+    height: 300px;
+  }
+  .text-name-custom{
+    text-wrap: balance;
+    font-size: clamp( 40px, 8px, 10px );
+  }
+
+  
+}
+@media (width <= 430px) {
+
+
+  #home-img{
+    margin-top: 0;
+  }
+  #img-profile{
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    height: 200px;
+  }
+  .text-name-custom{
+    text-wrap: balance;
+    font-size: clamp( 40px, 8px, 10px );
+    margin: auto;
+  }
+  #detail-profile{
+    position: absolute;
+    top: 50%;
+  }
+  
+}
+
+/* -------------------------- query section 2 -------------------------- */
+
+@media (width < 992px) {
+
+}
