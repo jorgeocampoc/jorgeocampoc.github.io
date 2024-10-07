@@ -3,10 +3,11 @@
   --dark-1: black;
   --violet-opacity: rgba(190, 60, 202, 0.808);
   --violet-2: rgba(30, 6, 85, 0.719) ;
+  --dark-opacity1:rgba(0, 0, 0, 0.808) ;
 }
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  padding: 0 ;
   background-color: black !important;
   overflow-x: hidden;
 }
@@ -27,6 +28,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100vw;
   
 }
 
@@ -44,6 +46,11 @@ nav a.active {
 
 #section-1-home{
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100vw;
   
 }
 #img-profile{
@@ -185,12 +192,16 @@ nav a.active {
   background-color: rgba(10, 10, 10, 0.274) !important;
 }
 
+.hoverlink{
+  cursor: pointer;
+}
 
 /* -------------------------- estilos section 2 -------------------------- */
 .section-2 {
   background: linear-gradient(rgb(0, 0, 0.2), rgba(0, 0, 0, 0.2)),
   url("/assets/img/pexels-karolina-grabowska-5624989.jpg");
   height: 100vh;
+  width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -198,6 +209,9 @@ nav a.active {
 
 
 }
+
+
+
 .about-text-custom{
   font-size: 1.2rem;
   color: #0333;
@@ -209,10 +223,11 @@ nav a.active {
 .img-about-custom{
   height: 350px;
 }
-.img-about-custom::before{
+/* .img-about-custom::before{
   content: '';
   display: block;
-  background-image: url('/assets/img/perfil.png');
+  opacity: 0.9;
+  background-image: url('/assets/img/8542.jpg');
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
@@ -221,7 +236,7 @@ nav a.active {
   border-radius: 15px;
   box-shadow: 1px 1px 0px 0px var(--violet-opacity);
 
-}
+} */
 .h-50-about{
   height: 50vh;
 }
@@ -263,6 +278,23 @@ nav a.active {
   
 }
 
+.title-custom{
+  text-transform: uppercase ;
+  text-decoration: underline !important;
+  text-underline-offset:7px;
+  
+}
+.bg-dark-custom{
+  background-color: rgba(24, 23, 23, 0.322) !important;
+  
+  
+}
+.border-none{
+  border: var(--dark-opacity1) !important ;
+  border-radius: 15px;
+  
+}
+
 .accordion-button{
   position: unset !important;
 }
@@ -278,7 +310,28 @@ nav a.active {
   border: none;
   
 }
+.accordion-button::after {
+  content: '\f139';
+  font-weight: bolder;
+  color: rgba(245, 245, 245, 0.863);
+  font-size: 1.5rem;
+  font-family: 'Font Awesome 6 Free';
+  
+}
 
+.accordion-button.collapsed::after {
+  content: '\f13a';
+  
+}
+.style-accordion{
+ border: none !important;
+
+}
+.custom-title-button-accrodion{
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 1.3rem;
+}
 .custom-text-title{
   font-weight: 700;
   font-size: 22px;
@@ -344,10 +397,13 @@ nav a.active {
 /* -------------------------- query section 1 -------------------------- */
 @media (width < 1000px) {
   #section-1-home{
-    display: flex;
+    display: flex; 
+    justify-content: center;
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
+    width: 100vw;
+    margin: 0 5px;
   }
   #img-profile{
     width: 300px;
@@ -361,6 +417,7 @@ nav a.active {
 
   
 }
+
 @media (width <= 430px) {
 
 
@@ -388,5 +445,68 @@ nav a.active {
 /* -------------------------- query section 2 -------------------------- */
 
 @media (width < 992px) {
+    .about{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-top: 130px;
+      
+    }
+    .h-50-about{
+      height: 60vh;
+    }
+   
+}
+@media (width < 520px) {
+  .h-50-about{
+    height: 70vh;
+    font-size: 1px !important;
+    
+  }
+  .custom-query{
+    margin-top: 20px !important;
+  }
+ 
+}
+@media (width > 374px) {
+  .about-text-custom{
+    font-size: 11px;
+  }
+  .custom-query-2{
+    margin: 10px 0px !important;
+  } 
+}
+@media (width > 343px) {
+  .about-text-custom{
+    font-size: 12px !important;
+  }
+  .custom-query-2{
+    margin: 25px 0px !important;
+  } 
+
+}
+@media (width > 820px) {
+  .about-text-custom{
+    font-size: 20px;
+  }
+
+}
+@media (width >= 852px) {
+  .about-text-custom{
+    font-size: 20px !important;
+    color: red;
+  }
+  .about-text-custom{
+    font-size: 10px;
+  }
+
+}
+@media (width >= 1024px) {
+  .about-text-custom{
+    font-size: 22px;
+  }
+  .about{
+    margin-top: 80px !important;
+  }
 
 }

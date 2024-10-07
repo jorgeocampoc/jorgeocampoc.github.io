@@ -11,12 +11,12 @@ let myInfo = {
     "desarrollo de software. Mi formacion me ha permitido" +
     " dominar varios lenguajes de programacion asi como tambien tecnologias clave.",
   aboutMe:
-    "Hola, soy Jorge, Ingeniero de Sistemas con una profunda pasión" +
+    "Hola, soy Jorge, Ingeniero de Sistemas con una profunda pasión " +
     "por el desarrollo de software y las tecnologías emergentes." +
-    "Aunque actualmente no tengo experiencia profesional en el campo," +
-    "he adquirido un sólido conocimiento en una variedad de lenguajes" +
-    "de programación y herramientas a través de estudios autodidactas" +
-    "y proyectos personales.",
+    " Aunque actualmente no tengo experiencia profesional en el campo," +
+    " he adquirido un sólido conocimiento en una variedad de lenguajes" +
+    " de programación y herramientas a través de estudios autodidactas" +
+    " y proyectos personales.",
 };
 let barsColors = [
   "#F5DE19",
@@ -123,3 +123,8 @@ let projects = [
       
     }
   ];
+
+
+  function goToPage( url ){
+    window.open( url )
+  }
