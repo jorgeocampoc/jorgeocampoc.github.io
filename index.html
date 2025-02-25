@@ -1,497 +1,568 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="sty.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <title>Mi portafoly</title>
-  </head>
 
-  <body>
-    <header class="h-10 bg-black d-flex" id="header">
-      <div class="menu">
-        <label class="logo" for="btn-menu">
-          <i class="icon-hover fa-solid fa-bars fa-2x"></i>
-        </label>
-      </div>
-      <div class="col-3 d-flex flex-custom-mid profileMenu">
-        <a class="navbar-brand" href="#">
-          <img
-            src="/assets/img/perfil.png"
-            alt="Bootstrap"
-            width="45"
-            class="rounded-circle"
-          />
-          <span>Jorge Ocampo</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="sty.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <title>Mi portafoly</title>
+</head>
+
+<body>
+  <header class="h-10 bg-black d-flex" id="header">
+    <div class="menu">
+      <label class="logo" for="btn-menu">
+        <i class="icon-hover fa-solid fa-bars fa-2x"></i>
+      </label>
+    </div>
+    <div class="col-3 d-flex flex-custom-mid profileMenu">
+      <a class="navbar-brand" href="#">
+        <img src="/assets/img/perfil.png" alt="Bootstrap" width="45" class="rounded-circle" />
+        <span>Jorge Ocampo</span>
+      </a>
+    </div>
+    <div class="col-6 flex-custom-mid menu-links menu2">
+      <nav class="gap-custom-20px">
+        <a class="drop-shadown links active" id="link-home" href="#home">
+          Inicio
         </a>
-      </div>
-      <div class="col-6 flex-custom-mid menu-links menu2">
-        <nav class="gap-custom-20px">
-          <a class="drop-shadown links active" id="link-home" href="#home">
+        <a class="drop-shadown links" id="link-about" href="#about">
+          Sobre mi
+        </a>
+        <a class="drop-shadown links" id="link-proyects" href="#proyects">
+          Proyectos
+        </a>
+      
+      </nav>
+    </div>
+    <input type="checkbox" id="btn-menu" />
+
+    <div class="menu-container">
+      <div class="menu-content">
+        <nav class="nav-manu">
+          <a onclick="closeMenu()" class="links text-start ps-3" href="#home">
             Inicio
           </a>
-          <a class="drop-shadown links" id="link-about" href="#about">
+          <a onclick="closeMenu()" class="links text-start ps-3" href="#about">
             Sobre mi
           </a>
-          <a class="drop-shadown links" id="link-proyects" href="#proyects">
+          <a onclick="closeMenu()" class="links text-start ps-3" href="#proyects">
             Proyectos
           </a>
-          <a class="drop-shadown links" id="link-services" href="#services">
-            Servivios
-          </a>
+        
         </nav>
+        <label class="logoClosed mx-3" for="btn-menu">
+          <i class="fa-2x fa-solid fa-xmark"></i>
+        </label>
       </div>
-      <input type="checkbox" id="btn-menu" />
+    </div>
+    <div class="col-3 flex-custom-mid menu2">
+      <nav class="gap-custom-20px">
+        <a href="https://github.com/jorgeocampoc" class="" target="_blank"><i class="drop-shadown fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/jorge-ocampo-c/" target="_blank" class=""><i class="drop-shadown fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:joryorch5000@gmail.com" target="_blank" class=""><i class="drop-shadown fa-solid fa-envelope"></i></a>
+        <a href="https://wa.me/+59176499207" target="_blank" class=""><i class="drop-shadown fa-brands fa-whatsapp"></i></a>
+      </nav>
+    </div>
+  </header>
+  <!------------------     section1 -------------------->
+  <section id="home" class="section-1">
+    <div class="m-auto container  px-4" id="section-1-home">
+      <div class="col d-flex justify-content-center" id="home-img">
+        <img src="/assets/img/perfil.png" alt="" id="img-profile" width="400px"
+          class="rounded-circle border-warning-subtle" />
+      </div>
+      <div class="col" id="detail-profile">
+        <h1 class="text-center text-name-custom" id="">
+          Jorge <br />Ocampo Cerezo
+        </h1>
+        <p class="text-center fs-2 text-profile-custom text-decoration-underline">
+          Ingeniero de Sistemas | Developer
+        </p>
+        <!-- "Desarrollando con Propósito: Desde la Idea hasta el Código, Creando Soluciones con Pasión, Creatividad y Optimismo" -->
+        <p class="w-75 py-3 m-auto text-center fs-4" id="slogan">
+          <strong>De la Idea al Código:</strong> Creando Soluciones con
+          Propósito, Pasión y Creatividad
+        </p>
+      </div>
+    </div>
+  </section>
 
-      <div class="menu-container">
-        <div class="menu-content">
-          <nav class="nav-manu">
-            <a onclick="closeMenu()" class="links text-start ps-3" href="#home">
-              Inicio
-            </a>
-            <a
-              onclick="closeMenu()"
-              class="links text-start ps-3"
-              href="#about"
-            >
-              Sobre mi
-            </a>
-            <a
-              onclick="closeMenu()"
-              class="links text-start ps-3"
-              href="#proyects"
-            >
-              Proyectos
-            </a>
-            <a
-              onclick="closeMenu()"
-              class="links text-start ps-3"
-              href="#services"
-            >
-              Servicios
-            </a>
-          </nav>
-          <label class="logoClosed mx-3" for="btn-menu">
-            <i class="fa-2x fa-solid fa-xmark"></i>
-          </label>
-        </div>
-      </div>
-      <div class="col-3 flex-custom-mid menu2">
-        <nav class="gap-custom-20px">
-          <a href="#" class=""
-            ><i class="drop-shadown fa-brands fa-github"></i
-          ></a>
-          <a href="#" class=""
-            ><i class="drop-shadown fa-brands fa-linkedin-in"></i
-          ></a>
-          <a href="#" class=""
-            ><i class="drop-shadown fa-brands fa-facebook"></i
-          ></a>
-          <a href="#" class=""
-            ><i class="drop-shadown fa-brands fa-whatsapp"></i
-          ></a>
-        </nav>
-      </div>
-    </header>
-    <!------------------     section1 -------------------->
-    <section id="home" class="section-1">
-      <div
-        class="m-auto container  px-4"
-        id="section-1-home"
-      >
-        <div class="col d-flex justify-content-center" id="home-img">
-          <img
-            src="/assets/img/perfil.png"
-            alt=""
-            id="img-profile"
-            width="400px"
-            class="rounded-circle border-warning-subtle"
-          />
-        </div>
-        <div class="col" id="detail-profile">
-          <h1 class="text-center text-name-custom" id="">
-            Jorge <br />Ocampo Cerezo
-          </h1>
-          <p
-            class="text-center fs-2 text-profile-custom text-decoration-underline"
-          >
-            Ingeniero de Sistemas | Developer
+  <!------------------     section 2 -------------------->
+  <section id="about" class="section-2">
+    <div class="container ">
+
+      <div class="px-2 row h-50-about align-items-center about">
+        <div class="col ms-3 ">
+          <h2 class="mb-3 ">Acerca de mi</h2>
+          <p class="about-text-custom" id="aboutMe">
+            <!-- abot me -->
           </p>
-          <!-- "Desarrollando con Propósito: Desde la Idea hasta el Código, Creando Soluciones con Pasión, Creatividad y Optimismo" -->
-          <p class="w-75 py-3 m-auto text-center fs-4" id="slogan">
-            <strong>De la Idea al Código:</strong> Creando Soluciones con
-            Propósito, Pasión y Creatividad
+        </div>
+        <div class="col ms-3 custom-query">
+          <h2 class="mb-3">Educacion y Conocimientos</h2>
+          <p class="about-text-custom " id="skill-text">
+            <!-- skills -->
           </p>
         </div>
       </div>
-    </section>
 
-    <!------------------     section 2 -------------------->
-    <section id="about" class="section-2">
-      <div class="container ">
-          
-          <div class="px-2 row h-50-about align-items-center about">
-            <div class="col ms-3 ">
-              <h2 class="mb-3 ">Acerca de mi</h2>
-              <p class="about-text-custom" id="aboutMe">
-                <!-- abot me -->
-              </p>
+      <div class="row justify-content-center flex-wrap custom-query-2">
+        <div class="col d-flex flex-wrap">
+          <div
+            class="my-1 col-xxl-6 col-sm-4 col-md-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1  ">
+              <img class="posAbs" src="assets/svg/js.svg" width="35" alt="" />
             </div>
-            <div class="col ms-3 custom-query">
-                <h2 class="mb-3">Educacion y Conocimientos</h2>
-                <p class="about-text-custom " id="skill-text">
-                  <!-- skills -->
-                </p>
+            <div class="col-10 loading-container mx-1 ms-2">
+              <div class="loading-bar" id="loaBar-1" value="60"></div>
             </div>
           </div>
 
-          <div class="row justify-content-center flex-wrap custom-query-2">
-            <div class="col d-flex flex-wrap">
-              <div
-                class="my-1 col-xxl-6 col-sm-4 col-md-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1  ">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/js.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 loading-container mx-1 ms-2">
-                  <div class="loading-bar" id="loaBar-1" value="60"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/react.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 w-75 loading-container ms-2">
-                  <div class="loading-bar" id="loaBar-2" value="60"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/node.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 loading-container mx-1 ms-2">
-                  <div class="loading-bar" id="loaBar-3" value="60"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/angular.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 w-75 loading-container ms-2">
-                  <div class="loading-bar" id="loaBar-4" value="50"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/html.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 loading-container mx-1 ms-2">
-                  <div class="loading-bar" id="loaBar-5" value="80"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/css.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 w-75 loading-container ms-2">
-                  <div class="loading-bar" id="loaBar-6" value="50"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/sql.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 loading-container mx-1 ms-2">
-                  <div class="loading-bar" id="loaBar-7" value="50"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/mongo.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 w-75 ms-1 loading-container ms-2">
-                  <div class="loading-bar" id="loaBar-8" value="70"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/java.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 loading-container mx-1 ms-2">
-                  <div class="loading-bar" id="loaBar-9" value="40"></div>
-                </div>
-              </div>
-
-              <div
-                class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"
-              >
-                <div class="col-xxl-1">
-                  <img
-                    class="posAbs"
-                    src="assets/svg/spring.svg"
-                    width="35"
-                    alt=""
-                  />
-                </div>
-                <div class="col-10 w-75 ms-2 loading-container">
-                  <div class="loading-bar" id="loaBar-10" value="50"></div>
-                </div>
-              </div>
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/react.svg" width="35" alt="" />
             </div>
-
-          
+            <div class="col-10 w-75 loading-container ms-2">
+              <div class="loading-bar" id="loaBar-2" value="40"></div>
+            </div>
           </div>
-      </div>
-    </section>
 
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/node.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 loading-container mx-1 ms-2">
+              <div class="loading-bar" id="loaBar-3" value="50"></div>
+            </div>
+          </div>
 
-    <section id="proyects" class="section-3">
-      <div class="d-flex justify-content-center">
-        <div class="col-10 pt-5 mt-3 mb-4">
-          <h3 class="card-title text-center mt-5 title-custom ">Mis proyectos</h3>
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/vue.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 w-75 loading-container ms-2">
+              <div class="loading-bar" id="loaBar-4" value="60"></div>
+            </div>
+          </div>
+
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/html.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 loading-container mx-1 ms-2">
+              <div class="loading-bar" id="loaBar-5" value="80"></div>
+            </div>
+          </div>
+
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/css.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 w-75 loading-container ms-2">
+              <div class="loading-bar" id="loaBar-6" value="60"></div>
+            </div>
+          </div>
+
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/sql.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 loading-container mx-1 ms-2">
+              <div class="loading-bar" id="loaBar-7" value="50"></div>
+            </div>
+          </div>
+
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/mongo.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 w-75 ms-1 loading-container ms-2">
+              <div class="loading-bar" id="loaBar-8" value="40"></div>
+            </div>
+          </div>
+
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/java.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 loading-container mx-1 ms-2">
+              <div class="loading-bar" id="loaBar-9" value="25"></div>
+            </div>
+          </div>
+
+          <div
+            class="my-1 col-xxl-6 d-flex justify-content-center align-items-center col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+            <div class="col-xxl-1">
+              <img class="posAbs" src="assets/svg/spring.svg" width="35" alt="" />
+            </div>
+            <div class="col-10 w-75 ms-2 loading-container">
+              <div class="loading-bar" id="loaBar-10" value="30"></div>
+            </div>
+          </div>
         </div>
 
-      </div>
-      <div class="container h-75 d-flex flex-wrap gap-5 justify-content-around align-items-center">
 
-        <div class="row  w-100">
-            <div class="accordion " id="accordionExample">
-              <div class="accordion-item bg-dark-custom">
-                <h2 class="accordion-header ">
-                  <button 
-                    class="accordion-button bg-dark-custom collapsed"  
-                    type="button" 
-                    data-bs-toggle="collapse" 
-                    data-bs-target="#collapseOne" 
-                    aria-expanded="false" 
-                    aria-controls="collapseOne">
-                    <p class="text-center w-100 pt-2 custom-title-button-accrodion">Mini Proyectos</p>
-                  </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                  <div class="accordion-body ">
-                   <div class="card bg-dark-custom">
-                    <div class="card-body bg-dark-custom">
-                      <strong>Resumen de Mini Proyectos:</strong>
-                      Este repositorio contiene una colección de mini proyectos desarrollados como parte de mi aprendizaje y práctica en
-                      desarrollo web. Cada proyecto aborda un aspecto específico de tecnologías como HTML, CSS, JavaScript, Bootstrap, y más.
-                      A continuación, se ofrece una breve descripción de algunos de los proyectos incluidos:
-                    
-                      <ul>
-                        <li><strong>Netflix Clon 1:</strong> Réplica de la pantalla de inicio de Netflix.</li>
-                        <li><strong>Login - Blog:</strong> Aplicación simple de un login/registro de usuarios, ademas de contener una seccion un CRUD de comentarios</li>
-                        <li><strong>KFC - Clon:</strong> Réplica de la pantalla de inicio de KFC.</li>
-                        <li><strong>App de clientes :</strong> Una aplicacion de gestion de clientes.</li>
-                        <li><strong>Juego de adivinanza:</strong> Un juego de adivina el numero.</li>
-                        <li><strong>Menu Responsivo:</strong>  Un menu responsivo con CSS.</li>
-                        <li><strong>Netflix Clon 2:</strong> Réplica de la pantalla de inicio de Netflix.</li>
-                        <li><strong>To Do List:</strong> Una aplicacion para gestionar tarea.</li>
-                        <li><strong>Clon Youtube:</strong> Replica de la pagina de youtube con CSS y HTML.</li>
-                        <li><strong>Juego busqueda del tesoro:</strong> Juego de busqueda del tesoro.</li>
-                        <li><strong>Juego Black Jack:</strong> Juego de mesa Black Jack.</li>
-                      </ul>
-                    
-                      Cada proyecto está diseñado para reforzar conceptos clave y demostrar habilidades prácticas en diferentes áreas del
-                      desarrollo web.
+      </div>
+    </div>
+  </section>
+
+
+  <section id="proyects" class="section-3">
+    <div class="d-flex justify-content-center">
+      <div class="col-10 pt-5 mt-3 mb-4">
+        <h3 class="card-title text-center mt-5 title-custom ">Mis proyectos</h3>
+      </div>
+
+    </div>
+    <div class="container h-75 d-flex flex-wrap gap-5 justify-content-around align-items-center">
+
+      <div class="row  w-100">
+        <div class="accordion " id="accordionExample">
+          <div class="accordion-item bg-dark-custom">
+            <h2 class="accordion-header ">
+              <button class="accordion-button bg-dark-custom collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <p class="text-center w-100 pt-2 custom-title-button-accrodion">Mini Proyectos</p>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+              <div class="accordion-body ">
+                <div class="card bg-dark-custom">
+                  <div class="card-body bg-dark-custom">
+                    <strong>Resumen de Mini Proyectos:</strong>
+                    Este repositorio contiene una colección de mini proyectos desarrollados como parte de mi aprendizaje
+                    y práctica en
+                    desarrollo web. Cada proyecto aborda un aspecto específico de tecnologías como HTML, CSS,
+                    JavaScript, Bootstrap, y más.
+                    A continuación, se ofrece una breve descripción de algunos de los proyectos incluidos:
+
+                    <ul>
+                      <li><strong>Netflix Clon 1:</strong> Réplica de la pantalla de inicio de Netflix.</li>
+                      <li><strong>Login - Blog:</strong> Aplicación simple de un login/registro de usuarios, ademas de
+                        contener una seccion un CRUD de comentarios</li>
+                      <li><strong>KFC - Clon:</strong> Réplica de la pantalla de inicio de KFC.</li>
+                      <li><strong>App de clientes :</strong> Una aplicacion de gestion de clientes.</li>
+                      <li><strong>Juego de adivinanza:</strong> Un juego de adivina el numero.</li>
+                      <li><strong>Menu Responsivo:</strong> Un menu responsivo con CSS.</li>
+                      <li><strong>Netflix Clon 2:</strong> Réplica de la pantalla de inicio de Netflix.</li>
+                      <li><strong>To Do List:</strong> Una aplicacion para gestionar tarea.</li>
+                      <li><strong>Clon Youtube:</strong> Replica de la pagina de youtube con CSS y HTML.</li>
+                      <li><strong>Juego busqueda del tesoro:</strong> Juego de busqueda del tesoro.</li>
+                      <li><strong>Juego Black Jack:</strong> Juego de mesa Black Jack.</li>
+                    </ul>
+
+                    Cada proyecto está diseñado para reforzar conceptos clave y demostrar habilidades prácticas en
+                    diferentes áreas del
+                    desarrollo web.
+                  </div>
+                  <div class="card-footer">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="d-flex align-items-center">
+                        <strong>Repositorio:</strong> <a class="fs-3 hoverlink"
+                          onclick="goToPage('https://github.com/jorgeocampoc/mini-proyectos.git')"><i
+                            class=" ms-3  fa-brands fa-github"></i></a>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <strong>Ir a pagina:</strong> <a class="fs-4 hoverlink"
+                          href="https://jorgeocampoc.github.io/mini-proyectos/" target="_blank"><i
+                            class="ms-3 fa-solid fa-up-right-from-square"></i></a>
+                      </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="accordion-item bg-dark-custom">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark-custom" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <p class="text-center w-100 pt-2 custom-title-button-accrodion">Proyectos con APIs</p>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="card bg-dark-custom mb-3">
+                  <div class="card-body bg-dark-custom">
+                    <p class="text-center"><strong>Rick and Morty</strong> <i class="fa-brands fa-js text-warning"></i>
+                    </p>
+                    En esta sección, he integrado la API de Rick and Morty para mostrar información dinámica sobre los
+                    personajes de la
+                    popular serie. Utilizando tecnologías como JavaScript para el consumo de la API REST para obtener
+                    datos en
+                    tiempo real y presentarlos de manera interactiva. Los usuarios pueden explorar personajes, ver
+                    detalles específicos y
+                    navegar por la serie, todo con una interfaz amigable y responsiva
+
+
                     <div class="card-footer">
                       <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex align-items-center">
-                          <strong>Repositorio:</strong> <a class="fs-3 hoverlink" onclick="goToPage('https://github.com/jorgeocampoc/mini-proyectos.git')"><i class=" ms-3  fa-brands fa-github"></i></a>
+                          <strong>Repositorio:</strong> <a class="fs-3 hoverlink"
+                            onclick="goToPage('https://github.com/jorgeocampoc/Rick_and_morty_with_JS')">
+                            <i class=" ms-3  fa-brands fa-github"></i>
+                          </a>
                         </div>
                         <div class="d-flex align-items-center">
-                          <strong>Ir a pagina:</strong> <a class="fs-4 hoverlink" href=""><i class="ms-3 fa-solid fa-up-right-from-square"></i></a>
+                          <strong>Ir a pagina:</strong> <a class="fs-4"
+                            href="https://jorgeocampoc.github.io/Rick_and_morty_with_JS/" target="_blank"><i
+                              class="ms-3 fa-solid fa-up-right-from-square"></i></a>
                         </div>
                       </div>
                     </div>
-                   </div>
                   </div>
-                  
                 </div>
-              </div>
-              <div class="accordion-item bg-dark-custom">
-                <h2 class="accordion-header">
-                  <button 
-                      class="accordion-button collapsed bg-dark-custom" 
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#collapseTwo" 
-                      aria-expanded="false" 
-                      aria-controls="collapseTwo">
-                      <p class="text-center w-100 pt-2 custom-title-button-accrodion">Proyectos con JavaScript y APIs</p>
-                  </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <div class="card bg-dark-custom">
-                      <div class="card-body bg-dark-custom">
-                        <strong>Rick and Morty:</strong>
-                        En esta sección, he integrado la API de Rick and Morty para mostrar información dinámica sobre los personajes de la
-                        popular serie. Utilizando tecnologías como JavaScript consumo la API REST para obtener datos en
-                        tiempo real y presentarlos de manera interactiva. Los usuarios pueden explorar personajes, ver detalles específicos y
-                        navegar por la serie, todo con una interfaz amigable y responsiva
-                      
-      
-                      </div>
-                      <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong> <a class="fs-3 hoverlink" onclick="goToPage('https://github.com/jorgeocampoc/Rick_and_morty_with_JS.git')"><i class=" ms-3  fa-brands fa-github"></i></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong> <a class="fs-4" href=""><i class="ms-3 fa-solid fa-up-right-from-square"></i></a>
-                          </div>
+                <div class="card bg-dark-custom mb-3">
+                  <div class="card-body bg-dark-custom fs-6">
+                    <p class="text-center"><strong>Marvel && Rick and Morty</strong> <i
+                        class="fa-brands fa-react text-info"></i></p>
+                    En esta sección, he integrado las APIs Marvel y Rick and Morty para mostrar información dinámica
+                    sobre los personajes. Utilizando React para el consumo de la API REST para obtener datos en
+                    tiempo real y presentarlos de manera interactiva.
+
+
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <strong>Repositorio:</strong> <a class="fs-3 hoverlink"
+                            onclick="goToPage('https://github.com/jorgeocampoc/Rick_and_morty_with_JS')"><i
+                              class=" ms-3  fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <strong>Ir a pagina:</strong> <a class="fs-4"
+                            href="https://marvel-rick-and-morthy.vercel.app/" target="_blank"><i
+                              class="ms-3 fa-solid fa-up-right-from-square"></i></a>
                         </div>
                       </div>
-                     </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark-custom mb-3">
+                  <div class="card-body bg-dark-custom fs-6">
+                    <p class="text-center"><strong>Heroes App</strong> <i class="fa-brands fa-react text-info"></i></p>
+                    En esta sección, he desarrollado Heroes App, una aplicación que muestra información sobre héroes de
+                    Marvel y DC. En lugar de consumir datos desde una API REST, he utilizado un archivo local en formato
+                    JSON que simula una API. Usando React, gestiono y presento la información de manera interactiva,
+                    permitiendo explorar detalles de cada héroe de forma dinámica.
+
+
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <strong>Repositorio:</strong> <a class="fs-3 hoverlink"
+                            onclick="goToPage('https://https://heroes-app-react-dist.vercel.app/marvel')"><i
+                              class=" ms-3  fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <strong>Ir a pagina:</strong> <a class="fs-4"
+                            href="https://heroes-app-react-dist.vercel.app/" target="_blank"><i
+                              class="ms-3 fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark-custom mb-3">
+                  <div class="card-body bg-dark-custom fs-6">
+                    <p class="text-center"><strong>GIFT APP</strong> <i class="fa-brands fa-react text-info"></i></p>
+                    En esta sección, he integrado la API de GIPHY para mostrar imágenes GIF dinámicas. Utilizando React
+                    para el consumo de la API REST, obtengo datos en tiempo real y los presento de manera interactiva,
+                    permitiendo a los usuarios buscar y ver GIFs relacionados con sus intereses.
+
+
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <strong>Repositorio:</strong> <a class="fs-3 hoverlink"
+                            onclick="goToPage('https://github.com/jorgeocampoc/GIFT-APP---DIST')"><i
+                              class=" ms-3  fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <strong>Ir a pagina:</strong> <a class="fs-4" href="https://gift-app-dist.vercel.app/"
+                            target="_blank"><i class="ms-3 fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark-custom mb-3">
+                  <div class="card-body bg-dark-custom fs-6">
+                    <p class="text-center"><strong>PokeApi</strong> <i class="fa-brands fa-vuejs text-success"></i></p>
+                    En esta sección, he integrado la PokeAPI para mostrar información dinámica sobre Pokémon. Utilizando
+                    Vue para el consumo de la API REST, obtengo datos en tiempo real sobre diferentes Pokémon y los
+                    presento de manera interactiva, permitiendo a los usuarios buscar y ver detalles sobre los Pokémon
+                    relacionados con sus intereses.
+
+
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <strong>Repositorio:</strong> <a class="fs-3 hoverlink"
+                            onclick="goToPage('https://github.com/jorgeocampoc/PokemonApi-.git')"><i
+                              class=" ms-3  fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <strong>Ir a pagina:</strong> <a class="fs-4"
+                            href="https://pokemon-api-hazel-three.vercel.app/#/" target="_blank"><i
+                              class="ms-3 fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card bg-dark-custom mb-3">
+                  <div class="card-body bg-dark-custom fs-6">
+                    <p class="text-center"><strong>Star wars API</strong> <i
+                        class="fa-brands fa-vuejs text-success"></i></p>
+                    En esta sección, he integrado la Star Wars API (SWAPI) para mostrar información dinámica sobre el
+                    universo de Star Wars. Utilizando Vue para el consumo de la API REST, obtengo datos en tiempo real
+                    sobre personajes, películas, naves y más. Los presento de manera interactiva, permitiendo a los
+                    usuarios explorar y descubrir detalles sobre sus personajes y elementos favoritos de la saga.
+
+
+                    <div class="card-footer">
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                          <strong>Repositorio:</strong> <a class="fs-3 hoverlink"
+                            onclick="goToPage('https://github.com/jorgeocampoc/Star-Wars-API-dist.git')">
+                            <i class=" ms-3  fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="d-flex align-items-center">
+                          <strong>Ir a pagina:</strong> <a class="fs-4" href="https://star-wars-api-three.vercel.app/"
+                            target="_blank"><i class="ms-3 fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item bg-dark-custom">
-                <h2 class="accordion-header">
-                  <button 
-                      class="accordion-button collapsed bg-dark-custom"  
-                      type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#collapseThree" 
-                      aria-expanded="false" 
-                      aria-controls="collapseThree">
-                      <p class="text-center w-100 pt-2 custom-title-button-accrodion">Proyectos con React y Node</p>
-                  </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                  <div class="accordion-body">
-                    <div class="card bg-dark-custom"></div>
-                      <div class="card-body bg-dark-custom">
-                        <strong>Resumen de Mini Proyectos:</strong>
-                        Este repositorio contiene una colección de mini proyectos desarrollados como parte de mi aprendizaje y práctica en
-                        desarrollo web. Cada proyecto aborda un aspecto específico de tecnologías como HTML, CSS, JavaScript, Bootstrap, y más.
-                        A continuación, se ofrece una breve descripción de algunos de los proyectos incluidos:
-                      
-                        <ul>
-                          <li><strong>Netflix Clone 1:</strong> Réplica de la pantalla de inicio de Netflix.</li>
-                      
-                        </ul>
-                      
-                        Cada proyecto está diseñado para reforzar conceptos clave y demostrar habilidades prácticas en diferentes áreas del
-                        desarrollo web.
-                      </div>
-                      <div class="card-footer">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong> <a class="fs-3" href="https://github.com/jorgeocampoc/mini-proyectos.git"><i class=" ms-3  fa-brands fa-github"></i></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong> <a class="fs-4" href=""><i class="ms-3 fa-solid fa-up-right-from-square"></i></a>
-                          </div>
-                        </div>
-                      </div>
-                     </div>
-                  </div>
-                </div>
             </div>
-          
+          </div>
+          <!-- <div class="accordion-item bg-dark-custom">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed bg-dark-custom" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <p class="text-center w-100 pt-2 custom-title-button-accrodion">Proyectos con React y Node</p>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="card bg-dark-custom"></div>
+                <div class="card-body bg-dark-custom">
+                  <strong>Resumen de Mini Proyectos:</strong>
+                  Este repositorio contiene una colección de mini proyectos desarrollados como parte de mi aprendizaje y
+                  práctica en
+                  desarrollo web. Cada proyecto aborda un aspecto específico de tecnologías como HTML, CSS, JavaScript,
+                  Bootstrap, y más.
+                  A continuación, se ofrece una breve descripción de algunos de los proyectos incluidos:
+
+                  <ul>
+                    <li><strong>Netflix Clone 1:</strong> Réplica de la pantalla de inicio de Netflix.</li>
+
+                  </ul>
+
+                  Cada proyecto está diseñado para reforzar conceptos clave y demostrar habilidades prácticas en
+                  diferentes áreas del
+                  desarrollo web.
+                </div>
+                <div class="card-footer">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <strong>Repositorio:</strong> <a class="fs-3"
+                        href="https://github.com/jorgeocampoc/mini-proyectos.git"><i
+                          class=" ms-3  fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <strong>Ir a pagina:</strong> <a class="fs-4" href=""><i
+                          class="ms-3 fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
         </div>
 
       </div>
-    </section>
 
-    <!-- <section id="services" class="section-4">Segunda sección (100vh)</section> -->
+    </div>
+  </section>
+  <section class="section-4 ">
+    <div class="px-2 row h-50-about align-items-center about ">
+      <div class="col-10 pt-5 m-auto">
+        <h3 class="card-title text-center mt-5 title-custom ">Mis contactos</h3>
+      </div>
+      <div class="d-flex justify-content-center gap-5 mt-5">
+          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
+            <div class="card-header m-auto fw-bold">GitHub</div>
+            <div class="card-body m-auto cursor">
+              <p class="card-text">
+                <a href="https://github.com/jorgeocampoc" target="_blank">
+                  <i class=" ms-3  fa-brands fa-github fs-3"></i> 
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
+            <div class="card-header m-auto fw-bold">Linkedin</div>
+            <div class="card-body m-auto cursor">
+              <p class="card-text">
+                <a href="https://www.linkedin.com/in/jorge-ocampo-c" target="_blank">
+                  <i class="fa-brands fa-linkedin-in fs-3"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
+            <div class="card-header m-auto fw-bold">Gmail</div>
+            <div class="card-body m-auto cursor">
+              <p class="card-text">
+                <a href="mailto:joryorch5000@gmail.com" target="_blank">
+                  <i class="fa-solid fa-envelope fs-3"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
+            <div class="card-header m-auto fw-bold">Whatsapp</div>
+            <div class="card-body m-auto cursor">
+              <p class="card-text">
+                <a href="https://wa.me/+59176499207" target="_blank">
+                  <i class="fa-brands fa-whatsapp fs-3"></i>
+                </a>
+              </p>
+            </div>
+          </div>
+        
+  
+      </div>
+    </div>
+  </section>
 
-    <script src="app.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <!-- <section id="services" class="section-4">Segunda sección (100vh)</section> -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
