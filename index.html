@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <header class="h-10 bg-black d-flex" id="header">
+    <header class="h-10 bg-black d-flex " id="header">
       <div class="menu">
         <label class="logo" for="btn-menu">
           <i class="icon-hover fa-solid fa-bars fa-2x"></i>
@@ -31,7 +31,7 @@
       <div class="col-3 d-flex flex-custom-mid profileMenu">
         <a class="navbar-brand" href="#">
           <img
-            src="/assets/img/perfil.png"
+            src="assets/img/perfil.png"
             alt="Bootstrap"
             width="45"
             class="rounded-circle"
@@ -105,11 +105,12 @@
       <div class="m-auto container px-4" id="section-1-home">
         <div class="col d-flex justify-content-center" id="home-img">
           <img
-            src="/assets/img/perfil.png"
+            src="assets/img/mi2.png"
             alt=""
             id="img-profile"
-            width="400px"
-            class="rounded-circle border-warning-subtle"
+            width="400"
+            height="400"
+            class="rounded-circle border-warning-subtle img-fluid"
           />
         </div>
         <div class="col" id="detail-profile">
@@ -310,624 +311,416 @@
     </section>
 
     <section id="proyects" class="section-3">
-      <div class="d-flex justify-content-center">
-        <div class="col-10 pt-5 mt-3 mb-4">
-          <h3 class="card-title text-center mt-5 title-custom">
+      <div class="py-5 mb-5 bg-light-custom ">
+        <div class="pt-5 mt-3 mb-4">
+          <h3 class=" text-center mt-5 title-custom text-dark">
             Mis proyectos
           </h3>
         </div>
       </div>
-      <div
-        class="container h-75 d-flex flex-wrap gap-5 justify-content-around align-items-center"
-      >
-        <div class="row w-100">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item bg-dark-custom">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button bg-dark-custom collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne"
-                  aria-expanded="false"
-                  aria-controls="collapseOne"
-                >
-                  <p
-                    class="text-center w-100 pt-2 custom-title-button-accrodion"
-                  >
-                    Mini Proyectos
-                  </p>
-                </button>
-              </h2>
-              <div
-                id="collapseOne"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <div class="card bg-dark-custom">
-                    <div class="card-body bg-dark-custom">
-                      <strong>Resumen de Mini Proyectos:</strong>
-                      Este repositorio contiene una colección de mini proyectos
-                      desarrollados como parte de mi aprendizaje y práctica en
-                      desarrollo web. Cada proyecto aborda un aspecto específico
-                      de tecnologías como HTML, CSS, JavaScript, Bootstrap, y
-                      más. A continuación, se ofrece una breve descripción de
-                      algunos de los proyectos incluidos:
-
-                      <ul>
-                        <li>
-                          <strong>Netflix Clon 1:</strong> Réplica de la
-                          pantalla de inicio de Netflix.
-                        </li>
-                        <li>
-                          <strong>Login - Blog:</strong> Aplicación simple de un
-                          login/registro de usuarios, ademas de contener una
-                          seccion un CRUD de comentarios
-                        </li>
-                        <li>
-                          <strong>KFC - Clon:</strong> Réplica de la pantalla de
-                          inicio de KFC.
-                        </li>
-                        <li>
-                          <strong>App de clientes :</strong> Una aplicacion de
-                          gestion de clientes.
-                        </li>
-                        <li>
-                          <strong>Juego de adivinanza:</strong> Un juego de
-                          adivina el numero.
-                        </li>
-                        <li>
-                          <strong>Menu Responsivo:</strong> Un menu responsivo
-                          con CSS.
-                        </li>
-                        <li>
-                          <strong>Netflix Clon 2:</strong> Réplica de la
-                          pantalla de inicio de Netflix.
-                        </li>
-                        <li>
-                          <strong>To Do List:</strong> Una aplicacion para
-                          gestionar tarea.
-                        </li>
-                        <li>
-                          <strong>Clon Youtube:</strong> Replica de la pagina de
-                          youtube con CSS y HTML.
-                        </li>
-                        <li>
-                          <strong>Juego busqueda del tesoro:</strong> Juego de
-                          busqueda del tesoro.
-                        </li>
-                        <li>
-                          <strong>Juego Black Jack:</strong> Juego de mesa Black
-                          Jack.
-                        </li>
-                      </ul>
-
-                      Cada proyecto está diseñado para reforzar conceptos clave
-                      y demostrar habilidades prácticas en diferentes áreas del
-                      desarrollo web.
-                    </div>
-                    <div class="card-footer">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div class="d-flex align-items-center">
-                          <strong>Repositorio:</strong>
-                          <a
-                            class="fs-3 hoverlink"
-                            onclick="goToPage('https://github.com/jorgeocampoc/mini-proyectos.git')"
-                            ><i class="ms-3 fa-brands fa-github"></i
-                          ></a>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <strong>Ir a pagina:</strong>
-                          <a
-                            class="fs-4 hoverlink"
-                            href="https://jorgeocampoc.github.io/mini-proyectos/"
-                            target="_blank"
-                            ><i
-                              class="ms-3 fa-solid fa-up-right-from-square"
-                            ></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="  d-flex justify-content-center bg-section-3 align-items-center   "> 
+        <div class="d-flex align-items-center gap-5 h-100 justify-content-evenly ">
+          <div class="card-wrap position-relative" data-bs-toggle="modal" data-bs-target="#modalJS">
+            <div class="card-header one">
+              <i class="fa-brands fa-js text-warning "></i>
             </div>
-            <div class="accordion-item bg-dark-custom">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed bg-dark-custom"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  <p
-                    class="text-center w-100 pt-2 custom-title-button-accrodion"
-                  >
-                    Proyectos con APIs
-                  </p>
-                </button>
-              </h2>
-              <div
-                id="collapseTwo"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom">
-                      <p class="text-center">
-                        <strong>Rick and Morty</strong>
-                        <i class="fa-brands fa-js text-warning"></i>
-                      </p>
-                      En esta sección, he integrado la API de Rick and Morty
-                      para mostrar información dinámica sobre los personajes de
-                      la popular serie. Utilizando tecnologías como JavaScript
-                      para el consumo de la API REST para obtener datos en
-                      tiempo real y presentarlos de manera interactiva. Los
-                      usuarios pueden explorar personajes, ver detalles
-                      específicos y navegar por la serie, todo con una interfaz
-                      amigable y responsiva
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://github.com/jorgeocampoc/Rick_and_morty_with_JS')"
-                            >
-                              <i class="ms-3 fa-brands fa-github"></i>
-                            </a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://jorgeocampoc.github.io/Rick_and_morty_with_JS/"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom fs-6">
-                      <p class="text-center">
-                        <strong>Marvel && Rick and Morty</strong>
-                        <i class="fa-brands fa-react text-info"></i>
-                      </p>
-                      En esta sección, he integrado las APIs Marvel y Rick and
-                      Morty para mostrar información dinámica sobre los
-                      personajes. Utilizando React para el consumo de la API
-                      REST para obtener datos en tiempo real y presentarlos de
-                      manera interactiva.
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://github.com/jorgeocampoc/Rick_and_morty_with_JS')"
-                              ><i class="ms-3 fa-brands fa-github"></i
-                            ></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://marvel-rick-and-morthy.vercel.app/"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom fs-6">
-                      <p class="text-center">
-                        <strong>Heroes App</strong>
-                        <i class="fa-brands fa-react text-info"></i>
-                      </p>
-                      En esta sección, he desarrollado Heroes App, una
-                      aplicación que muestra información sobre héroes de Marvel
-                      y DC. En lugar de consumir datos desde una API REST, he
-                      utilizado un archivo local en formato JSON que simula una
-                      API. Usando React, gestiono y presento la información de
-                      manera interactiva, permitiendo explorar detalles de cada
-                      héroe de forma dinámica.
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://https://heroes-app-react-dist.vercel.app/marvel')"
-                              ><i class="ms-3 fa-brands fa-github"></i
-                            ></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://heroes-app-react-dist.vercel.app/"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom fs-6">
-                      <p class="text-center">
-                        <strong>Cinema Scope</strong>
-                        <i class="fa-brands fa-react text-info"></i>
-                      </p>
-                      En esta sección, he desarrollado Heroes App, una
-                      aplicación que muestra información sobre héroes de Marvel
-                      y DC. Para obtener los datos, consumo la API de The Movie
-                      DB utilizando React. La aplicación presenta la información
-                      de manera interactiva, permitiendo explorar detalles de
-                      cada héroe de forma dinámica y actualizada en tiempo real.
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://github.com/jorgeocampoc/Cinema-Scope-Dist')"
-                              ><i class="ms-3 fa-brands fa-github"></i
-                            ></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://cinema-scope-dist.vercel.app/"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom fs-6">
-                      <p class="text-center">
-                        <strong>GIFT APP</strong>
-                        <i class="fa-brands fa-react text-info"></i>
-                      </p>
-                      En esta sección, he integrado la API de GIPHY para mostrar
-                      imágenes GIF dinámicas. Utilizando React para el consumo
-                      de la API REST, obtengo datos en tiempo real y los
-                      presento de manera interactiva, permitiendo a los usuarios
-                      buscar y ver GIFs relacionados con sus intereses.
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://github.com/jorgeocampoc/GIFT-APP---DIST')"
-                              ><i class="ms-3 fa-brands fa-github"></i
-                            ></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://gift-app-dist.vercel.app/"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom fs-6">
-                      <p class="text-center">
-                        <strong>PokeApi</strong>
-                        <i class="fa-brands fa-vuejs text-success"></i>
-                      </p>
-                      En esta sección, he integrado la PokeAPI para mostrar
-                      información dinámica sobre Pokémon. Utilizando Vue para el
-                      consumo de la API REST, obtengo datos en tiempo real sobre
-                      diferentes Pokémon y los presento de manera interactiva,
-                      permitiendo a los usuarios buscar y ver detalles sobre los
-                      Pokémon relacionados con sus intereses.
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://github.com/jorgeocampoc/PokemonApi-.git')"
-                              ><i class="ms-3 fa-brands fa-github"></i
-                            ></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://pokemon-api-hazel-three.vercel.app/#/"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom fs-6">
-                      <p class="text-center">
-                        <strong>Star wars API</strong>
-                        <i class="fa-brands fa-vuejs text-success"></i>
-                      </p>
-                      En esta sección, he integrado la Star Wars API (SWAPI)
-                      para mostrar información dinámica sobre el universo de
-                      Star Wars. Utilizando Vue para el consumo de la API REST,
-                      obtengo datos en tiempo real sobre personajes, películas,
-                      naves y más. Los presento de manera interactiva,
-                      permitiendo a los usuarios explorar y descubrir detalles
-                      sobre sus personajes y elementos favoritos de la saga.
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://github.com/jorgeocampoc/Star-Wars-API-dist.git')"
-                            >
-                              <i class="ms-3 fa-brands fa-github"></i
-                            ></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://star-wars-api-three.vercel.app/"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="card-content">
+              <h1 class="card-title text-dark ">Mini proyectos</h1>
+              <p class="card-text mb-2">Mini proeyectos en JS, CSS, HTML y Bootstrap</p>
+           </div>
+           <div class="abs-custom d-flex justify-content-center align-items-center">
+              <div class="">
+                Abrir
               </div>
-            </div>
-            <div class="accordion-item bg-dark-custom">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed bg-dark-custom"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <p
-                    class="text-center w-100 pt-2 custom-title-button-accrodion"
-                  >
-                    Proyectos Personales y Colaborativos
-                  </p>
-                </button>
-              </h2>
-              <div
-                id="collapseThree"
-                class="accordion-collapse collapse"
-                data-bs-parent="#accordionExample"
-              >
-                <div class="accordion-body">
-                  <div class="card bg-dark-custom mb-3">
-                    <div class="card-body bg-dark-custom fs-6">
-                      <p class="text-center">
-                        <strong>Slice Token 2.0</strong>
-                        <i class="fa-brands fa-vuejs text-success"></i>
-                        <i class="fa-brands fa-node-js text-warning"></i>
-                      </p>
-                      En esta sección, he integrado una API de inversiones para
-                      mostrar información dinámica sobre oportunidades y
-                      talentos. Este proyecto fue desarrollado durante el
-                      bootcamp de
-                      <strong
-                        ><a href="https://www.hamiloes.cool/" target="_blank"
-                          >Hamilo</a
-                        ></strong
-                      >, trabajando en equipo con un grupo de desarrolladores.
-                      Utilizamos Vue.js para el frontend y Node.js para el
-                      backend, permitiendo la obtención de datos en tiempo real
-                      relacionados con proyectos de inversión, perfiles de
-                      talento, empresas y más. La interfaz fue diseñada para ser
-                      altamente interactiva, brindando a los usuarios la
-                      posibilidad de explorar y descubrir información detallada
-                      sobre las oportunidades de inversión y los perfiles de
-                      talento más relevantes. Esta solución facilita la toma de
-                      decisiones estratégicas, impulsando el proceso de
-                      inversión y crecimiento dentro de un entorno empresarial
-                      colaborativo y en constante evolución. empresarial.
-
-                      <div class="card-footer">
-                        <div
-                          class="d-flex justify-content-between align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <strong>Repositorio:</strong>
-                            <a
-                              class="fs-3 hoverlink"
-                              onclick="goToPage('https://github.com/jorgeocampoc/jorgeocampoc.github.io.git')"
-                            >
-                              <i class="ms-3 fa-brands fa-github"></i
-                            ></a>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <strong>Ir a pagina:</strong>
-                            <a
-                              class="fs-4"
-                              href="https://inversioens-dist-vue.vercel.app"
-                              target="_blank"
-                              ><i
-                                class="ms-3 fa-solid fa-up-right-from-square"
-                              ></i
-                            ></a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="accordion-item bg-dark-custom">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed bg-dark-custom" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                <p class="text-center w-100 pt-2 custom-title-button-accrodion">Proyectos con React y Node</p>
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <div class="card bg-dark-custom"></div>
-                <div class="card-body bg-dark-custom">
-                  <strong>Resumen de Mini Proyectos:</strong>
-                  Este repositorio contiene una colección de mini proyectos desarrollados como parte de mi aprendizaje y
-                  práctica en
-                  desarrollo web. Cada proyecto aborda un aspecto específico de tecnologías como HTML, CSS, JavaScript,
-                  Bootstrap, y más.
-                  A continuación, se ofrece una breve descripción de algunos de los proyectos incluidos:
-
-                  <ul>
-                    <li><strong>Netflix Clone 1:</strong> Réplica de la pantalla de inicio de Netflix.</li>
-
-                  </ul>
-
-                  Cada proyecto está diseñado para reforzar conceptos clave y demostrar habilidades prácticas en
-                  diferentes áreas del
-                  desarrollo web.
-                </div>
-                <div class="card-footer">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                      <strong>Repositorio:</strong> <a class="fs-3"
-                        href="https://github.com/jorgeocampoc/mini-proyectos.git"><i
-                          class=" ms-3  fa-brands fa-github"></i></a>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <strong>Ir a pagina:</strong> <a class="fs-4" href=""><i
-                          class="ms-3 fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+           </div>
           </div>
+          <!-- modal JS -->
+          <div class="modal fade" id="modalJS" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-dialog-scrollable modal-dialog modal-xl">
+              <div class="modal-content bg-dark-custom">
+                
+                <div class="modal-body">
+                  <h1 class="text-center fs-4"> Mis proyectos en JS</h1>
+                  <p class="my-3 text-center">
+                    Este repositorio contiene una serie de mini proyectos desarrollados para mi aprendizaje en desarrollo web, utilizando tecnologías como HTML, CSS, JavaScript y Bootstrap. A continuación, se describen brevemente algunos de los proyectos incluidos.
+                  </p>
+                  <div class="d-flex mt-4 py-4 flex-wrap justify-content-center gap-4 align-items-center" >
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/mini.jpg" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Mini proyectos</h5>
+                              <p class="card-text">Pequeños proyectos en JavaScript, CSS, HTML y Bootstrap, desarrollados como base para mi aprendizaje y práctica en desarrollo web..</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/mini-proyectos.git" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://jorgeocampoc.github.io/mini-proyectos/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/rick2.jpg" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Rick and Morthy</h5>
+                              <p class="card-text">Integre la API de Rick and Morthy en Vue para mostrar información actualizada de personajes y capitulos.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/Rick_and_morty_with_JS" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://jorgeocampoc.github.io/Rick_and_morty_with_JS/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-wrap position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="card-header two">
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="card-content">
+              <h1 class="card-title">React</h1>
+              <p class="card-text mb-2">Proyectos con integraciones a APIs</p>
+           </div>
+           <div class="abs-custom d-flex justify-content-center align-items-center">
+            <div class="">
+              Abrir
+            </div>
+         </div>
+          </div>
+          <!-- modal Js -->
+           
+
+          <!-- modal react -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-dialog-scrollable modal-dialog modal-xl">
+              <div class="modal-content bg-dark-custom">
+                
+                <div class="modal-body">
+                  <h1 class="text-center fs-4"> Mis proyectos en React</h1>
+                  <p class="my-3 text-center">
+                    Desarrollo proyectos en React consumiendo APIs para mostrar datos en tiempo real. 
+                  </p>
+                  <div class="d-flex mt-4 py-4 flex-wrap justify-content-center gap-4 align-items-center" >
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                            <div class="h-50">
+                              <img src="assets/img/marvel.jpg" class="img-fluid h-100 rounded-start" >
+                            </div>
+                            <div class="h-50">
+                              <img src="assets/img/rick.png" class="img-fluid rounded-start h-100" alt="..." >
+                            </div>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Marvel && Rick and Morthy</h5>
+                              <p class="card-text">En esta sección, consumo las APIs de Marvel y Rick and Morty en React para mostrar personajes de forma dinámica e interactiva.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/Marvel-RickAndMorthy" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://marvel-rick-and-morthy.vercel.app/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/dc.jpg" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Heroes App</h5>
+                              <p class="card-text">Aplicación en React que muestra información de héroes de Marvel y DC usando un archivo JSON local simulado como API.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/Heroes-App-React-Dist" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://heroes-app-react-dist.vercel.app/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/movie.jpg" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Cinema Scope</h5>
+                              <p class="card-text">Consumo la API de The Movie DB en React para mostrar información actualizada de películas y personajes de manera dinámica e interactiva.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/Cinema-Scope-Dist" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://cinema-scope-dist.vercel.app/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/gift.jpg" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">GIFT APP</h5>
+                              <p class="card-text">He integrado la API de GIPHY en React para mostrar GIFs dinámicos, permitiendo a los usuarios buscar y ver imágenes en tiempo real.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/GIFT-APP---DIST" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://gift-app-dist.vercel.app/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card-wrap position-relative" data-bs-toggle="modal" data-bs-target="#vueModal " > 
+            <div class="card-header four">
+              <i class="fa-brands fa-vuejs"></i>
+            </div>
+            <div class="card-content">
+              <h1 class="card-title">Vue</h1>
+              <p class="card-text mb-2">Proyectos con integraciones a APIs</p>
+           </div>
+           <div class="abs-custom d-flex justify-content-center align-items-center">
+            <div class="">
+              Abrir
+            </div>
+         </div>
+          </div>
+          <!-- modal Vue -->
+          <div class="modal fade" id="vueModal" tabindex="-1" aria-labelledby="vueModal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-dialog-scrollable modal-dialog modal-xl">
+              <div class="modal-content bg-dark-custom">
+                
+                <div class="modal-body">
+                  <h1 class="text-center fs-4"> Mis proyectos en Vue</h1>
+                  <p class="my-3 text-center">
+                    Desarrollo proyectos en Vue consumiendo APIs para mostrar datos en tiempo real. 
+                  </p>
+                  <div class="d-flex mt-4 py-4 flex-wrap justify-content-center gap-4 align-items-center" >
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/pokemon.png" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">PokeApi</h5>
+                              <p class="card-text">Consumo la API Pokemon en Vue para mostrar información actualizada de pokemons de manera dinámica e interactiva.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/PokemonApi-.git" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://pokemon-api-hazel-three.vercel.app" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/starw.png" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Star wars API</h5>
+                              <p class="card-text">He integrado la API de Star Wars en Vue para mostrar información actualizada de personajes y peliculas de manera dinámica e interactiva.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/Star-Wars-API-dist.git" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://star-wars-api-three.vercel.app/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="https://img.freepik.com/vector-premium/plantilla-vector-icono-logotipo-burbuja-conversacion-chat-aplicacion-purpura_672224-591.jpg?w=740" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Simple Chat App</h5>
+                              <p class="card-text">He creado una app de chat en Vue con Firebase, permitiendo a los usuarios enviar y recibir mensajes en tiempo real.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/Simple-chat-App-Vue" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://simple-chat-app-vue.vercel.app/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5 ">
+                      <div class="card bg-custom-ligth " style="max-width: 540px;">
+                        <div class="row g-0 ">
+                          <div class="col-md-4 d-flex flex-column justify-content-center ">
+                              <img src="assets/img/slice.png" class="img-fluid h-100 rounded-start" >
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Slice Token</h5>
+                              <p class="card-text">Desarrollé una app en Vue.js y Node.js acerca de inversiones para explorar oportunidades, talentos y empresas en tiempo real.</p>
+                              <div class="d-flex justify-content-between">
+                                <div class="ms-2 border border-2 rounded-circle shadow my-auto cursor hover-custom">
+                                  <a href="https://github.com/jorgeocampoc/jorgeocampoc.github.io" target="_blank">
+                                    <i class="fa-brands fs-3 fa-github text-dark"></i>
+                                  </a>
+                                </div>
+                                <div>
+                                  <a href="https://inversioens-dist-vue.vercel.app/" target="_blank">
+                                    <button class="btn btn-violet rounded-5 shadow">
+                                      Visitar pagina
+                                    </button>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      
         </div>
-      </div>
-    </section>
-    <section class="section-4">
-      <!-- <div class="px-2 row h-50-about align-items-center about ">
-      <div class="col-10 pt-5 m-auto">
-        <h3 class="card-title text-center mt-5 title-custom ">Mis contactos</h3>
-      </div>
-      <div class="d-flex justify-content-center gap-5 mt-5">
-          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
-            <div class="card-header m-auto fw-bold">GitHub</div>
-            <div class="card-body m-auto cursor">
-              <p class="card-text">
-                <a href="https://github.com/jorgeocampoc" target="_blank">
-                  <i class=" ms-3  fa-brands fa-github fs-3"></i> 
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
-            <div class="card-header m-auto fw-bold">Linkedin</div>
-            <div class="card-body m-auto cursor">
-              <p class="card-text">
-                <a href="https://www.linkedin.com/in/jorge-ocampo-c" target="_blank">
-                  <i class="fa-brands fa-linkedin-in fs-3"></i>
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
-            <div class="card-header m-auto fw-bold">Gmail</div>
-            <div class="card-body m-auto cursor">
-              <p class="card-text">
-                <a href="mailto:joryorch5000@gmail.com" target="_blank">
-                  <i class="fa-solid fa-envelope fs-3"></i>
-                </a>
-              </p>
-            </div>
-          </div>
-          <div class="card bg-dark-custom mb-3" style="min-width: 18rem;">
-            <div class="card-header m-auto fw-bold">Whatsapp</div>
-            <div class="card-body m-auto cursor">
-              <p class="card-text">
-                <a href="https://wa.me/+59176499207" target="_blank">
-                  <i class="fa-brands fa-whatsapp fs-3"></i>
-                </a>
-              </p>
-            </div>
-          </div>
         
-  
+        
       </div>
-    </div> -->
     </section>
 
-    <!-- <section id="services" class="section-4">Segunda sección (100vh)</section> -->
+
 
     <script src="app.js"></script>
     <script

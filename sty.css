@@ -4,6 +4,17 @@
   --violet-opacity: rgba(190, 60, 202, 0.808);
   --violet-2: rgba(30, 6, 85, 0.719) ;
   --dark-opacity1:rgba(0, 0, 0, 0.808) ;
+  --yellow-js:#F5DE19 ;
+  --color-text: #616161;
+  --color-text-btn: #ffffff;
+  --card1-gradient-color1: #f12711;
+  --card1-gradient-color2: #f5af19;
+  --card2-gradient-color1: #7F00FF;
+  --card2-gradient-color2: #E100FF;
+  --card3-gradient-color1: #3f2b96;
+  --card3-gradient-color2: #a8c0ff;
+  --card4-gradient-color1: #11998e;
+  --card4-gradient-color2: #38ef7d;
 }
 body {
   margin: 0 ;
@@ -23,7 +34,7 @@ body {
 
 .section-1 {
   background: linear-gradient(rgb(0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("/assets/img/section-2.jpg");
+    url("./assets/img/section-2.jpg");
   height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -199,7 +210,7 @@ nav a.active {
 /* -------------------------- estilos section 2 -------------------------- */
 .section-2 {
   background: linear-gradient(rgb(0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-  url("/assets/img/pexels-karolina-grabowska-5624989.jpg");
+  url("./assets/img/pexels-karolina-grabowska-5624989.jpg");
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
@@ -223,20 +234,7 @@ nav a.active {
 .img-about-custom{
   height: 350px;
 }
-/* .img-about-custom::before{
-  content: '';
-  display: block;
-  opacity: 0.9;
-  background-image: url('/assets/img/8542.jpg');
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border-radius: 15px;
-  box-shadow: 1px 1px 0px 0px var(--violet-opacity);
 
-} */
 .h-50-about{
   height: 50vh;
 }
@@ -262,12 +260,20 @@ nav a.active {
 
 
 /* --------------------------  estilos section 3 -------------------------- */
-
-.section-3 {
-  background: linear-gradient(rgb(0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-  url("/assets/img/sec.jpg");
+.section-3{
   height: 100vh;
+  background: rgb(245,241,235);
+background: linear-gradient(158deg, rgba(245,241,235,1) 70%, rgba(0,0,0,1) 70%, rgba(160,48,170,1) 85%);
   width: 100vw;
+}
+.bg-light-custom{
+  background-color: #F5F1EB;
+  
+}
+
+.bg-section-3{
+ 
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -285,10 +291,12 @@ nav a.active {
   
 }
 .bg-dark-custom{
-  background-color: rgba(24, 23, 23, 0.322) !important;
+  background-color: rgba(24, 23, 23, 0.651) !important;
   
   
 }
+
+
 .border-none{
   border: var(--dark-opacity1) !important ;
   border-radius: 15px;
@@ -350,20 +358,26 @@ nav a.active {
   cursor: pointer;
 }
 
-
-
-/* -------------------------- estilos section 4 -------------------------- */
-.section-4 {
-  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)),
-  url("/assets/img/premium_photo-1720287601920-ee8c.jpg");
-  min-height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
+.btn-violet {
+  background-color: #9930A3 !important;
+  color: white;
+  border: none;
+}
+.hover-custom:hover{
+  background-color: rgba(158, 149, 149, 0.753);
+}
+.btn-violet:hover {
+  background-color: #7a2480 !important; 
 }
 
-
+.btn-violet:focus,
+.btn-violet:active {
+  background-color: #6b1b66 !important; 
+  box-shadow: 0 0 0 0.2rem var(--violet-opacity) !important;
+}
+.bg-custom-ligth{
+  background-color: rgba(235, 228, 228, 0.918) !important;
+}
 /* -------------------------- Medias querys -------------------------- */
 
 /* -------------------------- query menu slide -------------------------- */
@@ -512,4 +526,132 @@ nav a.active {
     margin-top: 80px !important;
   }
 
+}
+
+
+
+
+
+.card-wrap{
+  width: 220px;
+  background: #fff;
+  border-radius: 20px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  color: var(--color-text);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+              rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+.card-wrap:hover{
+  transform: scale(1.1);
+}
+.card-header{
+  height: 200px;
+  width: 100%;
+  background: red;
+  border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
+  display: grid;
+  place-items: center;
+
+}
+
+.card-header i{
+  color: #fff;
+  font-size: 72px;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.card-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: black !important;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+  
+}
+.card-text{
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+  color: black !important;
+}
+.card-btn{
+  border: none;
+  border-radius: 100px;
+  padding: 5px 30px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.card-header.one{
+  background: linear-gradient(to top left, white, black);
+}
+.card-header.two{
+  background: linear-gradient(to bottom left, #292929, #027287);
+}
+.card-header.three{
+  background: linear-gradient(to bottom left, white, #D95C00);
+}
+.card-header.four{
+  background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+.card-btn.one{
+  background: linear-gradient(to bottom left, white, black);
+}
+.card-btn.two{
+  background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
+}
+.card-btn.three{
+  background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
+}
+.card-btn.four{
+  background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+}
+
+
+.card-wrap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.295); 
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+}
+.card-wrap:hover::before {
+  opacity: 1; 
+}
+
+.card-wrap:hover .alert {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.abs-custom {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0; 
+  font-size: 20px; 
+  transition: opacity 2s ease, color 2s ease; 
+  width: 100%;
+  height: 100%;
+
+}
+
+.abs-custom:hover {
+  color: red; 
+  opacity: 1; 
 }
